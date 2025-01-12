@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGV Giao Diện đăng nhập</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./dangnhap.js"></script> 
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <div class="menu-trigger">
+        <span>☰ Menu</span>
+      </div>
+    
+       <!-- Dropdown Menu -->
+       <div class="dropdown-menu">
+        <ul class="menu-list">
+          <li class="dropdown">
+            <a href="#">Phim ▼</a>
+            <ul class="submenu">
+              <li><a href="/phim-dang-chieu.html">Phim Đang Chiếu</a></li>
+              <li><a href="phim-sap-chieu.html">Phim Sắp Chiếu</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="thanh_vien.html">Thành Viên ▼</a>
+            <ul class="submenu">
+              <li><a href="tai-khoan-cgv.html">Tài Khoản CGV</a></li>
+              <li><a href="quyen-loi-thanh-vien.html">Quyền Lợi Thành Viên</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="./images/cgvlogo.png" alt="CGV Logo" />
+      </div>
+      <div class="right-section">
+        <div class="auth">
+          <a href="dang-nhap.html"><i class="fas fa-user-circle"></i></a>
+        </div>
+        <div class="language-switch">
+          <a href="#" class="active">VN</a> | <a href="#">EN</a>
+        </div>
+      </div>
+    </header>
+<!-- Login Section -->        
+
+    <section class="login-container">
+      <div class="login-box">
+        <div class="header-buttons">
+          <b><a href="#" class="btn-login">ĐĂNG NHẬP</a></b>
+          <b><a href="dang_ky.html" class="btn-register">ĐĂNG KÝ</a></b>
+      </div>
+          <form action="process_login.php" method="post">
+              <label for="email">Email hoặc số điện thoại</label>
+              <input type="text" id="email" name="email" placeholder="Nhập email hoặc số điện thoại" required>
+
+              <label for="password">Mật khẩu</label>
+              <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+              <label for="captcha">Vui lòng nhập ký tự bên dưới</label>
+              <div class="captcha-box">
+                  <img src="./images/macapcha.png" alt="Captcha"> 
+                  <input type="text" id="captcha" name="captcha" placeholder="Nhập captcha" required>
+              </div>
+
+              <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+              <a href="#" class="forgot-password">Bạn muốn tìm lại mật khẩu?</a>
+          </form>
+      </div>
+  </section>
+
+   <!-- Footer -->
+   <footer class="footer-section">
+    <div class="footer-top">
+      <ul class="footer-menu">
+        <li>
+          <h3>CGV Việt Nam</h3>
+          <ul>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Tiện Ích Online</a></li>
+            <li><a href="#">Thẻ Quà Tặng</a></li>
+            <li><a href="#">Tuyển Dụng</a></li>
+            <li><a href="#">Liên Hệ Quảng Cáo CGV</a></li>
+            <li><a href="#">Dành cho đối tác</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Điều khoản sử dụng</h3>
+          <ul>
+            <li><a href="#">Điều Khoản Chung</a></li>
+            <li><a href="#">Điều Khoản Giao Dịch</a></li>
+            <li><a href="#">Chính Sách Thanh Toán</a></li>
+            <li><a href="#">Chính Sách Bảo Mật</a></li>
+            <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Kết nối với chúng tôi</h3>
+          <div class="social-icons">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="./images/youtube.png" alt="YouTube" /></a>
+                <a href="#"
+                  ><img src="./images/instagram.png" alt="Instagram"
+                /></a>
+                <a href="#"><img src="./images/zalo.png" alt="Zalo" /></a>
+              </div>
+              <a href="#" class="certification">
+                <img
+                  src="./images/thongbaobocongthuong.png"
+                  alt="Đã Thông Báo Bộ Công Thương"/>
+          </a>
+        </li>
+        <li>
+          <h3>Chăm sóc khách hàng</h3>
+          <ul>
+            <li>Hotline: 1900 6017</li>
+            <li>Giờ làm việc: 8:00 - 22:00</li>
+            <li>Email hỗ trợ: hoidap@cgv.vn</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <strong>CÔNG TY TNHH CJ CGV VIỆT NAM</strong><br />
+        Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày
+        31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí
+        Minh.<br />
+        Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành
+        phố Hồ Chí Minh, Việt Nam.<br />
+        Đường dây nóng (Hotline): 1900 6017<br />
+        COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>
